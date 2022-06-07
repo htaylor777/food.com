@@ -1,0 +1,1582 @@
+/*
+Theme Name: familyFood
+Author: Larry Taylor
+Author URI: https://ltwebdev.net
+License:  GNU General Public License version 3
+License URI:  http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
+Description: My Scratch, very customizable, multipurpose theme that you can use to create amazing websites through drag and drop. It comes with a pre-designed home page, 5 header designs and over 35 ready-to-use content blocks that you can easily customize. You can also design your own custom blocks by combining more than 25 drag and drop components. Skyline WP offers lots of customization options (video background, slideshow background, header content types, etc) to help you create a website that stands out in no time. It is also designed with responsiveness, to work on mobile devices right out of the box, and is the only theme you will ever need! CHECK OUT THE DEMOS:
+Text Domain: FamilyFood
+*/
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+body{
+   margin: 0;
+   padding:0;
+}
+
+div.container{
+  /*  background:rgb(207, 104, 104); */
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width:60%;
+}
+
+.ScriptHeader{
+    text-align: left;
+    padding-left: 30px;
+}
+
+.site-header {
+    background-color: #4CAF50;
+    margin:0;
+    padding:2em;
+    color:#fff;
+}
+
+h1.site-title a {
+   color: rgb(231, 231, 231) !important;
+   text-decoration: none !important;  
+   vertical-align: text-top;
+}
+
+h2.site-description {
+   color: rgb(158, 240, 178) !important;
+   text-decoration: none !important;  
+   vertical-align: text-top; 
+}
+
+h2.title-class a{
+    color:rgb(106, 106, 107);
+    text-decoration: none !important;
+}
+
+ul#menu-main li a {
+    color: yellow !important;
+    text-decoration: none !important;  
+    vertical-align: bottom; 
+    width: 100%; 
+    padding-left: 190px; 
+}
+
+main.site-main {
+        float: left;  
+        width:70%;
+        padding-left: 20px; 
+        /*here*/ 
+        background-color:black;
+}
+
+.content-box{
+    background-color:rgb(234, 234, 235);
+    padding:20px 20px 10px 10px;
+    width:110%;
+}
+
+header#masthead {
+    width: 100%;
+}
+
+header#masthead .site-header hgroup.hdgroup {
+    vertical-align: text-top;
+    color: green;
+}
+
+.sidebar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+   
+
+}
+
+ul.wp-block-latest-posts__list.alignleft.wp-block-latest-posts {
+    margin-left:1em;
+    list-style-type: none;
+
+}
+
+#site-navigation{
+    float: right;
+    position: fixed;
+    z-index: 10; /* Stay on top */
+    top: 50; /* Stay at the top */
+    right: 50;  /* Stay at the right - horizontal postion */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px;
+    list-style:none;  
+  }
+
+p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+
+hr.break{ 
+        background-color: #fff;
+        color:rgb(255, 255, 255);
+        height: 3px;
+    }
+
+/* The sidebar menu */
+
+/* Style page content */
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+
+@media only screen and (max-width: 800px ) {
+  .sidenav      { display:none !important} 
+    
+}
+
+.sidenav {
+    /*  position:relative; */
+      width: 35%; /* Set the width of the sidebar */
+      position:static; /* Fixed Sidebar (stay in place on scroll) */
+      z-index:999; /* Stay on top */
+      top: 160; /* Stay at the top */
+      right: 0;  /* Stay at the right */
+      background-color: #fff; /* Black */
+     /* overflow-x: hidden; /* Disable horizontal scroll */
+     margin-top: 10px;
+      padding-top: 80px;
+      padding-left: 40px;
+      list-style:none;
+      height: 5000px;;
+      float:right;
+      border-top-left-radius: 10px;
+    }
+
+/* The navigation menu links */
+
+.sidenav a {
+      padding: 0px 0px 6px 0px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #25477a;
+      display: block;
+    }
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+      color: rgb(33, 209, 121);
+    }
+
+.widget-title {
+      padding-left: 15px;
+  }
+
+p.author-date {
+    font-style: italic;
+    font-size: 14px;
+}
+
+h2.title-class a:hover {
+    color: rgb(37, 153, 37);
+    text-decoration: none !important;
+}
+
+h1.site-title a:hover{ 
+    color: rgb(70, 201, 70) !important;
+    text-decoration: none !important;
+    text-shadow:0 0 20px rgb(167, 218, 178) !important;
+}
+
+div.top-break{
+    display: block;
+    background-color: #fff;
+    height: 10px;
+  }
+
+/*floats the thumbnails to the right on each post */
+
+.attachment-homepage-thumb.size-homepage-thumb.wp-post-image {
+    float: right;
+    margin: 10px;
+  }
+
+div#posts-page{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-top: 10px;
+  }
+
+div.myfooter{  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:80px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+  }
+
+div#bottom-page-spacer{
+      height:100px;
+      
+  }
+
+/*comments styling */
+
+.comment-metadata {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+   
+}
+
+.comment-metadata a{
+    text-decoration: none !important;
+    color:grey;
+}
+
+b.fn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+b.fn a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none !important;
+    color:grey;
+}
+
+input#submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+input#submit:hover{
+background-color:#1b6596;
+
+}
+
+textarea#comment {
+    color: rgb(99, 98, 100);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* drop down menu */
+
+/* Style The Dropdown Button */
+
+/* //@note - navagation menu postion */
+
+/*controls the position of the nav menu */
+
+div.nav-menu-container{ 
+    float: right;
+    position: fixed; 
+    top: 100; /* Stay at the top */
+    right: 50;  /* Stay at the right - horizontal postion */
+    padding-top: 30px;
+}
+
+.wp-post-image,
+.image{
+    box-shadow: 2px 3px 4px rgba(0,0,0,.5);    
+}
+
+/* CHECK -------------------------------------*/
+
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+      background:#ecf0f1 none repeat scroll 0 0;
+      color: #000;
+      font-family: "Jaldi",sans-serif;
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 0;
+      padding:0;
+  }
+
+a{
+      font-family: 'Jaldi', sans-serif;
+      text-decoration: none;
+      outline: none;
+  }
+
+a:hover, a:focus {
+      color: #373e18;
+  }
+
+/* -------------------------------------------------------------------------------------------
+      ITEM DEMO Style -  SHOULD REQUIRE to add while implementing on your web page.
+  ---------------------------------------------------------------------------------------------- */
+
+.Site {
+    display: flex;
+    min-height: 200vh;
+    flex-direction: column;
+  }
+
+/* TOP NAVIGATION SECTION */
+
+.navigation-check{ 
+background-color: #4CAF50; 
+/*background-image: url("image/sandwiches2.png"); */
+height:120px;
+box-shadow: 5px 10px 18px #718883;
+border: 1px solid rgb(32, 102, 69);
+z-index: 999;
+}
+
+/*.logo{ 
+      float:left;
+      left:0;   
+  }
+*/
+
+.rt-heading {
+    padding-left:10px;
+}
+
+.subtitle {
+    float:left;
+    left:0;
+  }
+
+/* TOP MENU BAR COORDINATES */
+
+.col-rt-2 {
+      float:right;
+      padding-top:110px;
+      padding-right:35%;
+     
+}
+
+.site-content {
+    flex: 1;
+    height: 150vh;
+  }
+
+.left-container{
+      width:60%;
+      float:left;
+      padding:20px;
+  }
+
+/* footer area*/
+
+footer ul{
+      margin:0;
+      padding:0;
+      text-align:center;
+  }
+
+footer li{
+      list-style:none;
+      display:inline-block;
+      padding:5px 12px;
+      
+  }
+
+footer li a{
+      text-transform:capitalize;
+      text-decoration:none;
+      font-size:18px;
+      color:#000;
+  }
+
+footer li a:hover{
+      color:#fff;
+  }
+
+/*---------------------------------
+  recipes page */
+
+/*-----------------------------------
+/* front-page Bottom page header */
+
+.column {
+    float: left; 
+    width: 50%; 
+   /* border: 1px solid blueviolet; */
+    text-align: center;
+   }
+
+/* lower box images */
+
+.lbi {
+    margin: 1% 1% 1% 2%; 
+    display: block;
+    width: 95%;
+    height: 30vh;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+   }
+
+h2.fp-bottom-header {
+    color:#c48e3e;
+    font-family: open sans,sans-serif; 
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+section.fp-images { 
+ height:100%;
+ margin-bottom: 500px;
+ padding-top: 50px;
+
+ 
+ }
+
+.fpl-image img {
+    display: block;
+    width: 100%;
+    height: 200vh;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.fpr-image img {
+    display: block;
+    width: 50%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.fp-bottom-title{
+    color:#c48e3e;
+    font-family: open sans,sans-serif; 
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.fp-bottom-text { 
+    color: rgb(77, 71, 71);
+    font-size: 1em;
+    margin-left:20px;
+    margin-right: 20px;
+    margin-top: -12px; 
+    margin-bottom: 30px;
+}
+
+/* button3 for fpage lower box images  (front-page.php) */
+
+.button3 {
+    z-index: 0; /* Stay on top */
+    margin: 0 30%;
+    text-align: center;
+    border-radius: 4px;
+    background-color:transparent;
+    box-sizing: border-box;
+   /* border:0.1em solid #FFFFFF; */
+    color: #fff;
+    font-size: 20px;
+    padding: 16px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer; 
+    position: relative; 
+    text-transform: uppercase;
+    float: left;
+    margin-top:50px;
+   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7); 
+ }
+
+.button3:after {
+    content: '\0279C';
+    size: 100px;
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -30px;
+    transition: 0.5s;
+  }
+
+.button3:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    background-color:rgba(6, 248, 19, 0.5);
+    font-weight: bold;
+    color:#fff;
+  }
+
+.button3:hover:after {
+    opacity: 1;
+    right: 8px;
+  }
+
+.social-icons{ 
+    float:right;
+    right:120;
+    padding-left: 1300px;
+    margin-right: auto;
+    width: 100%;
+}
+
+.sfsiplus_norm_row.sfsi_plus_wDiv{
+    float:right;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+/* align-items: center;
+    position: fixed; 
+    top: 0; /* Stay at the top */
+
+/* center:0;  /* Stay at the right - horizontal postion */
+
+/*  padding-top: 30px; */
+
+.page-logo {
+    background-image: url("http://wpdevelopercourse.local/wp-content/uploads/2022/03/cropped-Food-Spaghetti-icon-for-logo1nchW.png");
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 80%;
+    margin-left: 10px;
+    margin-top: -1px;
+    background-size:contain !important;
+}
+
+/* Mobile Screen Responsiveness height------------------*/
+
+/* On smaller screens, where height is less than 450px, 
+ change the style of the sidebar (less padding and a smaller font size) */
+
+/*Mobile Screen Responsiveness width--------------------*/
+
+@media screen and (max-width: 768px) { 
+.sidenav      { display:none !important} 
+.left-container { padding-left: 10px; margin-right: 20px;  width: 50%; }
+.content-box {width:180%;}
+.mega-menu-toggle { z-index:999; margin-right:-120px; margin-top: 10px; float:right !important; right: 0 !important;}
+body{height: 2200px;}
+.mobile-center{margin-left:30px;margin-right:30px;}
+/* disable the main desktop logo */
+.rt-heading {
+    display:none !important
+ }
+
+ /* Enable mobile div */
+.mobile-logo{
+    background-image: url("http://wpdevelopercourse.local/wp-content/uploads/2022/03/cropped-Food-Spaghetti-icon-for-logo1nchW.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-left: -15px;
+    background-size:contain !important;
+}
+
+
+
+
+.site-logo{
+    display:none !important;
+}
+/* remove top social icons */
+.sfsiplus_inerCnt {display:none !important;}
+
+
+/* Recipes page ----------------------------------*/
+
+h2.fp-bottom-header{
+font-size:16px;
+}
+
+.fp-bottom-text{ 
+    font-size: 12px;
+}
+
+
+.lbi {
+    margin: 1% 1% 1% 2%; 
+    display: block;
+    width: 95%;
+   height: 20vh;
+   -o-object-fit: contain;
+      object-fit: contain;
+}
+
+.button3 {
+width: 100px;
+height: 44px;
+font-size: 10px;
+padding:10px;
+}
+
+.image{
+  width:90%;
+  margin-right:40px;  
+}
+
+body{ 
+    font-size: 16px;
+     }
+}
+
+/* Single post pages ----------------------------*/
+
+.center-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.center-text{ 
+    text-align: center;
+}
+
+/*-----------------------------------------------*/
+
+/* recipe-archive css */
+
+.professor-cards {
+    margin: 0;
+    padding: 0;
+  }
+
+.search-overlay .professor-cards {
+      padding-top: 21px;
+    }
+
+.professor-card {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    margin-right: 15px;
+    background-color: #F95738;
+    overflow: hidden;
+  }
+
+.search-overlay .professor-card {
+      width: 180px;
+    }
+
+.professor-card__image {
+      display: block;
+      transition: opacity .3s ease-out, transform .3s ease-out;
+    }
+
+.professor-card:hover .professor-card__image {
+      opacity: .80;
+      transform: scale(1.1) rotate(4deg);
+    }
+
+.professor-card__name {
+      font-weight: 400;
+      font-size: .9rem;
+      position: absolute;
+      bottom: 0;
+      color: #FFF;
+      left: 0;
+      right: 0;
+      padding: 3px 10px;
+      background-color: rgba(39, 204, 121, 0.85);
+    }
+
+.professor-card:hover .professor-card__name {
+      background-color: rgba(25, 179, 92, 0.85);
+    }
+
+.professor-card__list-item {
+      display: inline-block;
+      list-style: none;
+    }
+
+.all-recipes {
+    z-index:999; /* Stay on top */
+    top: 260; /* Stay at the top */
+    right: 0;  /* Stay at the right */
+    background-color:red; /* Black */
+   /* overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10px;
+    padding-left: 40px;
+    list-style:none;
+    height: 5000px;;
+    float:right;
+    border-top-left-radius: 10px;
+}
+
+/*----------------------------------------*/
+
+/* Responsive Table for Recipe archive */
+
+@media only screen and (max-width: 768px ) {
+	
+        #no-more-tables table, 
+        #no-more-tables thead, 
+        #no-more-tables tbody, 
+        #no-more-tables th, 
+        #no-more-tables td, 
+        #no-more-tables tr { 
+           display: inline;  
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+     
+        /* Hide table headers (but not display: none;, for accessibility) */
+        #no-more-tables thead tr { 
+          /*  position: absolute; */
+            top: 10px;
+            left: 10px;
+        }
+     
+      
+     
+        #no-more-tables td { 
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid rgb(31, 187, 57); 
+            position: relative;
+            padding-left: 0; 
+            white-space: normal;
+            text-align:center;
+        }
+     
+        #no-more-tables td:before { 
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 90%; 
+            padding-right: 10px; 
+            white-space: wrap;
+            text-align:left;
+            font-weight: bold;
+        }
+     
+        /*
+        Label the data
+        */
+        #no-more-tables td:before { content: attr(data-title); }
+    }
+
+/*--------------------------------------------------
+ /* JS SEARCH */
+
+.search-trigger {
+  display: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+  cursor: pointer;
+  top: 1px;
+  margin-top:10px;
+  margin-right: 20px;
+  float:right;
+  right:0;
+  font-size: 3em;
+}
+
+@media (min-width: 960px) {
+
+.search-trigger {
+    display: inline-block;
+    top: 6px
+}
+  }
+
+.search-trigger:hover {
+  opacity: .65;
+}
+
+.site-header {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+  }
+
+.site-header__avatar {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+.site-header__avatar img {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+
+.site-header__menu {
+      visibility: hidden;
+      position: absolute;
+      background-color: rgba(13, 55, 94, 0.89);
+      left: 0;
+      right: 0;
+      top: -20px;
+      padding-top: 58px;
+      opacity: 0;
+      transform: translateY(-20%);
+      transition: opacity .3s ease-out, visibility .3s ease-out, transform .3s ease-out;
+      padding-bottom: 20px;
+    }
+
+.site-header__menu--active {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+      }
+
+@media (min-width: 960px) {
+  
+.site-header__menu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        position: static;
+        background-color: transparent;
+        float: right;
+        padding-top: 0;
+        padding-bottom: 0;
+        top: 0
+    }
+    }
+
+.site-header__search-trigger {
+      cursor: pointer;
+      color: rgb(250, 250, 250);
+      font-size: 1.2rem;
+      position: absolute;
+      top: 6px;
+      right: 16px;
+    }
+
+@media (min-width: 530px) {
+  
+.site-header__search-trigger {
+        top: 4px;
+        font-size: 1.4rem
+    }
+    }
+
+@media (min-width: 960px) {
+  
+.site-header__search-trigger {
+        display: none
+    }
+    }
+
+.site-header__menu-trigger {
+      color: rgb(252, 252, 252);
+      cursor: pointer;
+      font-size: 1.2rem;
+      position: absolute;
+      z-index: 10;
+      top: 7px;
+      right: 46px;
+    }
+
+@media (min-width: 530px) {
+  
+.site-header__menu-trigger {
+        top: 5px;
+        font-size: 1.4rem
+    }
+    }
+
+@media (min-width: 960px) {
+  
+.site-header__menu-trigger {
+        display: none
+    }
+    }
+
+.site-header__util {
+      padding: 0 0 0 20px;
+    }
+
+@media (min-width: 960px) {
+  
+.site-header__util {
+        padding: 0;
+        float: right
+    }
+    }
+
+.site-header__btn {
+      margin-right: 20px;
+    }
+
+@media (min-width: 960px) {
+  
+.site-header__btn {
+        float: left
+    }
+    }
+
+.site-header .btn--with-photo {
+      margin-right: 0;
+    }
+
+.search-overlay {
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, .96);
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(1.09);
+        transition: opacity .3s, transform .3s, visibility .3s;
+        box-sizing: border-box;
+      }
+
+.search-overlay p {
+          padding-top: 15px;
+        }
+
+.search-overlay .event-summary p {
+          padding-top: 0;
+        }
+
+.search-overlay .event-summary {
+          margin-bottom: 0;
+          margin-top: 20px;
+        }
+
+body.admin-bar .search-overlay {
+          top: 32px;
+        }
+
+.search-overlay__top {
+          background-color: rgba(0, 0, 0, .12);
+        }
+
+.search-overlay__icon {
+          margin-right: 15px;
+          font-size: 1.8rem;
+          color: #ffffff;
+        }
+
+@media (min-width: 960px) {
+      
+.search-overlay__icon {
+            font-size: 2.5em;
+        }
+        }
+
+.search-overlay--active {
+          visibility: visible;
+          opacity: 1;
+          transform: scale(1);
+                  z-index:999;
+        }
+
+.search-overlay__section-title {
+          margin: 30px 0 1px 0;
+          font-weight: 400;
+          color: #0D3B66;
+          font-size: 2rem;
+          padding: 15px 0;
+          border-bottom: 1px solid #CCC;
+        }
+
+.search-overlay__close {
+          position: absolute;
+          top: 23px;
+          right: 16px;
+          font-size: 3.1rem;
+          cursor: pointer;
+          transition: all .3s;
+          background-color: #FFF;
+          color: #ff024e;
+          line-height: .7;
+        }
+
+@media (min-width: 530px) {
+      
+.search-overlay__close {
+            top: 18px;
+            font-size: 2.1rem
+        }
+        }
+
+@media (min-width: 960px) {
+      
+.search-overlay__close {
+            top: 26px;
+            font-size: 2.8rem
+        }
+        }
+
+.search-overlay__close:hover {
+          opacity: 1;
+        }
+
+.search-overlay .one-half {
+          padding-bottom: 0;
+        }
+
+.search-term {
+        width: 75%;
+        box-sizing: border-box;
+        border: none;
+        padding: 15px 0;
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 300;
+        outline: none;
+        color: #099c90;
+      
+      }
+
+@media (min-width: 530px) {
+      
+.search-term {
+          font-size: 1.5rem
+      
+      }
+        }
+
+@media (min-width: 960px) {
+      
+.search-term {
+          width: 80%;
+          font-size: 3rem
+      
+      }
+        }
+
+.body-no-scroll {
+        overflow: hidden;
+      }
+
+/* MAYBE === JS Search check for duplicates ------------*/
+
+.headline {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+  }
+
+.headline--large {
+    font-size: 3.6rem;
+  }
+
+@media (min-width: 530px) {
+    .headline--large {
+      font-size: 6.25rem;
+    }
+  }
+
+.headline--large-medium {
+    font-size: 5rem;
+    margin: 0 0 1rem 0;
+  }
+
+.headline--medium {
+    font-size: 1.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+@media (min-width: 530px) {
+    .headline--medium {
+      font-size: 3.125rem;
+    }
+  }
+
+.headline--small-plus {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6875rem;
+    font-weight: 400;
+    margin-bottom: 1.9rem;
+  }
+
+.headline--small {
+    font-size: 1.2rem;
+    margin-bottom: 1.9rem;
+  }
+
+@media (min-width: 530px) {
+    .headline--small {
+      font-size: 1.6875rem;
+    }
+  }
+
+.headline--smaller {
+    font-size: 1.5rem;
+  }
+
+.headline--tiny {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3875rem;
+    margin-bottom: 0.25rem;
+  }
+
+.headline--post-title a {
+    color: #0d3b66;
+    text-decoration: none;
+  }
+
+.headline--post-title a:hover {
+    text-decoration: underline;
+  }
+
+.generic-content p,
+  .generic-content li {
+    font-size: 1.15rem;
+  }
+
+.generic-content blockquote,
+  .generic-content blockquote p {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+.generic-content h1,
+  .generic-content h2,
+  .generic-content h3,
+  .generic-content h4,
+  .generic-content h5,
+  .generic-content h6 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+.generic-content h1 {
+    font-size: 3.6rem;
+  }
+
+.generic-content h2 {
+    font-size: 3.1rem;
+  }
+
+.generic-content h3 {
+    font-size: 2.6rem;
+  }
+
+.generic-content h4 {
+    font-size: 2.1rem;
+  }
+
+.generic-content h5 {
+    font-size: 1.6rem;
+  }
+
+.generic-content h6 {
+    font-size: 1.15rem;
+  }
+
+@media (min-width: 530px) {
+    .generic-content h1 {
+      font-size: 6.25rem;
+    }
+    .generic-content h2 {
+      font-size: 5rem;
+    }
+    .generic-content h3 {
+      font-size: 3.125rem;
+    }
+    .generic-content h4 {
+      font-size: 2.4rem;
+    }
+    .generic-content h5 {
+      font-size: 1.9rem;
+    }
+    .generic-content h6 {
+      font-size: 1.15rem;
+    }
+  }
+
+@media (min-width: 960px) {
+    .full-width-split {
+      display: flex;
+    }
+  }
+
+.full-width-split__one {
+    flex: 1;
+    padding: 1.6rem 16px;
+  }
+
+@media (min-width: 960px) {
+    .full-width-split__one {
+      padding: 40px;
+    }
+  }
+
+@media (min-width: 960px) {
+    .full-width-split__one .full-width-split__inner {
+      float: right;
+    }
+  }
+
+.full-width-split__two {
+    flex: 1;
+    background-color: #faf0ca;
+    padding: 1.6rem 16px;
+  }
+
+@media (min-width: 960px) {
+    .full-width-split__two {
+      padding: 40px;
+    }
+  }
+
+@media (min-width: 1350px) {
+    .full-width-split__inner {
+      width: 610px;
+    }
+  }
+
+.event-summary {
+    position: relative;
+    padding-left: 107px;
+    min-height: 77px;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+  }
+
+.event-summary__title a {
+    color: #173f58;
+  }
+
+.event-summary__date {
+    text-decoration: none;
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 14px 0 11px 0;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #0d3b66;
+    width: 80px;
+    line-height: 1;
+    transition: opacity 0.33s;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+  }
+
+.event-summary__date:hover {
+    opacity: 0.75;
+  }
+
+.event-summary__date--beige {
+    background-color: #f4d35e;
+  }
+
+.event-summary__month {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+.event-summary__day {
+    display: block;
+    font-size: 2.02rem;
+    font-weight: 700;
+  }
+
+.page-links {
+    position: relative;
+    z-index: 1;
+    background-color: #faf0ca;
+    margin: 0 0 40px 0;
+  }
+
+@media (min-width: 767px) {
+    .page-links {
+      margin: 0 0 40px 20px;
+      width: 300px;
+      float: right;
+    }
+  }
+
+.page-links__title {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0d3b66;
+    color: rgb(0, 0, 0);
+  }
+
+.page-links__title a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: #0d3b66;
+  }
+
+.page-links li {
+    border-top: 1px solid rgb(244, 223, 138);
+  }
+
+.page-links li:first-child {
+    border-top: none;
+  }
+
+.page-links__active,
+  .page-links .current_page_item {
+    text-align: center;
+    background-color: rgb(244, 231, 180);
+    color: #0d3b66;
+    font-weight: bold;
+  }
+
+.page-links li a {
+    display: block;
+    text-align: center;
+    padding: 17px 10px;
+    text-decoration: none;
+    color: #0d3b66;
+    transition: all 0.3s;
+  }
+
+.page-links li a:hover {
+    color: rgb(13, 51, 87);
+    background-color: rgb(238, 225, 170);
+  }
+
+.acf-map {
+    width: 100%;
+    height: 400px;
+    border: #ccc solid 1px;
+    margin: 20px 0;
+  }
+
+/* fixes potential theme css conflict */
+
+.acf-map img {
+    max-width: inherit !important;
+  }
+
+.link-list li {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    border-bottom: 1px dotted #dedede;
+  }
+
+.search-overlay .link-list li {
+    font-size: 1.3rem;
+  }
+
+.link-list li:last-child {
+    border-bottom: none;
+  }
+
+.link-list a {
+    color: #f95738;
+  }
+
+.metabox {
+    background-color: #faf0ca;
+    border-radius: 3px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.07);
+  }
+
+.metabox--position-up {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+  }
+
+.metabox--with-home-link {
+    padding: 0;
+  }
+
+.metabox__main {
+    padding: 10px 15px 10px 11px;
+  }
+
+.metabox p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgb(168, 146, 56);
+  }
+
+.metabox a {
+    color: rgb(168, 146, 56);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+.metabox a:hover {
+    text-decoration: underline;
+  }
+
+.metabox .metabox__blog-home-link {
+    background-color: #0d3b66;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px 0 0 3px;
+    font-weight: normal;
+  }
+
+.metabox .metabox__blog-home-link:hover {
+    text-decoration: none;
+    background-color: rgb(11, 47, 81);
+  }
+
+.post-item {
+    border-bottom: 1px dotted #dedede;
+    padding-bottom: 1.7rem;
+    margin-bottom: 1.7rem;
+  }
+
+.post-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+.one-half,
+.one-third,
+.one-fourth,
+.one-fifth,
+.one-sixth {
+  padding-bottom: 1.6rem;
+}
+
+@media (min-width: 960px) {
+  .row {
+    margin-right: -50px;
+  }
+
+  .one-half,
+  .one-third,
+  .two-thirds,
+  .one-fourth,
+  .one-fifth,
+  .one-sixth {
+    padding-bottom: 0;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 50px;
+  }
+
+  .two-thirds {
+    width: 66.66%;
+  }
+  .one-half {
+    width: 50%;
+  }
+  .one-third {
+    width: 33.33%;
+  }
+  .one-quarter {
+    width: 25%;
+  }
+  .one-fifth {
+    width: 20%;
+  }
+  .one-sixth {
+    width: 16.66%;
+  }
+}
+
+/* Make Top WP Admin Bar Fixed on Mobile */
+
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}
+
+/* Seach Form */
+
+.search-form {
+  background-color: #dedede;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-form label {
+  display: block;
+}
+
+.search-form-row {
+  display: flex;
+}
+
+.search-form .s {
+  min-width: 20px;
+  flex-basis: auto;
+  flex-grow: 1;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+
+@media (min-width: 530px) {
+  .search-form .s {
+    font-size: 1.4rem;
+  }
+}
+
+.search-submit {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #0d3b66;
+  font-family: "Roboto", sans-serif;
+  padding: 0 20px;
+  margin-left: 10px;
+}
+
+.note-limit-message {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  color: #c32929;
+  font-weight: bold;
+}
+
+.note-limit-message.active {
+  visibility: visible;
+  opacity: 1;
+}
