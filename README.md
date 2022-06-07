@@ -3,7 +3,7 @@ Wordpress site developed for customer that includs a custom plugin that communic
 for recipes.  
 
 Features include:
-
+-----------------
 - Custom API plugin (LT API Searches)
 - Advanced Custom Fields
 - Custom categories 
