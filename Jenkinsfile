@@ -13,7 +13,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //sh 'docker build -t raj80dockerid/jenkinstest ./pushdockerimage/' (this will use the tag latest)
-		sh 'docker build -t ltartsmusic/lt-jenkins-pipeline1:$BUILD_NUMBER ./food.com/'
+		sh 'docker build -t ltartsmusic/ltjenktest1:$BUILD_NUMBER ./food.com/'
             }
         }
         stage('Docker Login') {
@@ -26,7 +26,7 @@ pipeline {
             steps {
 		//sh 'docker push raj80dockerid/jenkinstest' (this will use the tag latest)    
             
-                sh 'docker push ltartsmusic/lt-jenkins-pipeline1:$BUILD_NUMBER'
+                sh 'docker push ltartsmusic/ltjenktest1:$BUILD_NUMBER'
                 }
             }
         }
