@@ -11,11 +11,15 @@ pipeline {
             }
         }
         stage('Build Image') {
+		agent { 
+			docker{	
             steps {
                 //sh 'docker build -t raj80dockerid/jenkinstest ./pushdockerimage/' (this will use the tag latest)
 		sh 'docker build -t ltartsmusic/lt-jenkins-pipeline1:$BUILD_NUMBER ./food.com/'
             }
         }
+		}
+	}
         stage('Docker Login') {
             steps {
                 //sh 'docker login -u $DOCKERHUB_CREDS_USR -p $DOCKERHUB_CREDS_PSW' (this will leave the password visible)
