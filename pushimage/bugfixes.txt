@@ -1,4 +1,6 @@
-To correct the docker not found command - I had to update the machine path  so jenkins could find the docker install
+
+
+To fix the "docker not found" error in the shell command build script - I had to update the machine path  so jenkins could find the docker install
 
 (base) ltaylor~: vi /usr/local/Cellar/jenkins-lts/2.346.3/homebrew.mxcl.jenkins-lts.plist 
 
