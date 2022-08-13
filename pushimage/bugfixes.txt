@@ -1,0 +1,28 @@
+To correct the docker not found command - I had to update the machine path  so jenkins could find the docker install
+
+(base) ltaylor~: vi /usr/local/Cellar/jenkins-lts/2.346.3/homebrew.mxcl.jenkins-lts.plist 
+
+
+***added the local PATH to the bottom of this xml config file for jenkins to see docker:
+
+...
+</array>
+
+<key>RunAtLoad</key>
+    <true />
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key>
+      <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Docker.app/Contents/Resources/bin/:/Users/Kh0a/Library/Group\ Containers/group.com.docker/Applications/Docker.app/Contents/Resources/bin</string>
+    </dict>
+  </dict>
+</plist>
+
+
+THEN: restarted the brew Jenkins service
+
+(base) ltaylor~: brew services restart jenkins-lts
+
+Stopping `jenkins-lts`... (might take a while)
+==> Successfully stopped `jenkins-lts` (label: homebrew.mxcl.jenkins-lts)
+==> Successfully started `jenkins-lts` (label: homebrew.mxcl.jenkins-lts)
