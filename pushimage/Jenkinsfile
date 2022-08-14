@@ -33,7 +33,7 @@ pipeline {
 	          stage('Trigger Downstream Job') {
             steps {
 		
-		    build quietPeriod: 3, job: 'downstreamjob'
+		    build  job: 'downstreamjob'
                
                 }
             }    
