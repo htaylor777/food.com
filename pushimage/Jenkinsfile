@@ -29,6 +29,16 @@ pipeline {
                 sh 'docker push ltartsmusic/lt-jenkins-pipeline1:$BUILD_NUMBER'
                 }
             }
+
+	          stage('Trigger Downstream Job') {
+            steps {
+		
+		    build quietPeriod: 3, job: 'downstreamjob'
+               
+                }
+            }    
+	    
+	    
         }
     post {
 		always {
